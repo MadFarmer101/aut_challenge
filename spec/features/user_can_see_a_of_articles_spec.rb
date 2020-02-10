@@ -7,7 +7,7 @@ feature 'List articles on index page' do
     before do
 
       create(:article, title: 'A breaking news item')
-      create(:article, title: 'Some breaking action')  
+      create(:article, title: 'Some really breaking action')  
     
       visit root_path
     end
