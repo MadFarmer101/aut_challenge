@@ -1,9 +1,14 @@
 # spec/features/user_can_see_list_of_articles_spec.rb
-require "rails_helper"
+require 'rails_helper'
+require 'factory_bot'
 
 feature 'List articles on index page' do
   context 'with articles in db' do
     before do
+
+      create(:article, title: 'A breaking news item')
+      create(:article, title: 'Some breaking action')  
+    
       visit root_path
     end
 
