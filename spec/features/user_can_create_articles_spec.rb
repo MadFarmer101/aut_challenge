@@ -18,5 +18,9 @@ context "Successfully create an article [Happy Path]" do
         article = Article.find_by(title: 'Happy holidays')
         expect(current_path).to eq articles_path
     end
+
+    it 'User should see article title' do
+        expect(page).to have_content 'Happy holidays'
+    end
 end
 end
