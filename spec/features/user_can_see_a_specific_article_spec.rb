@@ -4,6 +4,7 @@ feature 'User can see specific article' do
     create(:article, title: 'Learn Rails 5', content: 'Build awesome rails applications')
     
     visit root_path
+    #click_on 'Show'
     click_on 'A breaking news item'
   end
 

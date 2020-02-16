@@ -19,8 +19,17 @@ context "Successfully create an article [Happy Path]" do
         expect(current_path).to eq articles_path
     end
 
+    it 'User should see success message' do
+        expect(page).to have_content 'success'
+      end
+
     it 'User should see article title' do
         expect(page).to have_content 'Happy holidays'
     end
+    
+    skip 'User should see article content' do
+        expect(page).to have_content 'Buy your gifts now!'
+      end
+
 end
 end
