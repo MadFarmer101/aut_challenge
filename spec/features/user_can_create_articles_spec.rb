@@ -38,9 +38,19 @@ context "User doesn't enter a title for the article [Sad Path]" do
       click_on "Create Article"
     end
 
-    it 'User should see error message' do
+    it 'User should see error message for missing title' do
         expect(page).to have_content "Title can't be blank"
-      end
     end
-  
+end
+
+context "User doesn't enter a content for the article [Sad Path]" do
+    before do
+      fill_in "Title", with: "Happy holidays"
+      click_on "Create Article"
+    end
+
+    it 'User should see error message for missing content' do
+        expect(page).to have_content "Content can't be blank"
+    end
+  end
 end
