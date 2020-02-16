@@ -20,7 +20,7 @@ context "Successfully create an article [Happy Path]" do
     end
 
     it 'User should see success message' do
-        expect(page).to have_content 'success'
+        expect(page).to have_content 'Article was successfully created.'
       end
 
     it 'User should see article title' do
