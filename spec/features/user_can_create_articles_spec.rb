@@ -27,7 +27,7 @@ context "Successfully create an article [Happy Path]" do
         expect(page).to have_content 'Happy holidays'
     end
     
-    skip 'User should see article content' do
+    it 'User should see article content' do
         expect(page).to have_content 'Buy your gifts now!'
       end
 
