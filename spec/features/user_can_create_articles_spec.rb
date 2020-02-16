@@ -29,7 +29,7 @@ context "Successfully create an article [Happy Path]" do
     
     it 'User should see article content' do
         expect(page).to have_content 'Buy your gifts now!'
-      end
+    end
 end
 
 context "User doesn't enter a title for the article [Sad Path]" do
