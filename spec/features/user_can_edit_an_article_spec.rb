@@ -27,6 +27,10 @@ feature 'Edit an article' do
         it 'Title' do
         expect(page).to have_content 'Plain story'
         end
+
+        it 'User should see success message' do
+        expect(page).to have_content 'Article was successfully edited'
+        end
     end
 
     context "User doesn't enter a title or content when editing an article [Sad Path]" do
