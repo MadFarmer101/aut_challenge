@@ -30,6 +30,17 @@ context "Successfully create an article [Happy Path]" do
     it 'User should see article content' do
         expect(page).to have_content 'Buy your gifts now!'
       end
-
 end
+
+context "User doesn't enter a title for the article [Sad Path]" do
+    before do
+      fill_in "Content", with: "Buy your gifts now!"
+      click_on "Create Article"
+    end
+
+    it 'User should see error message' do
+        expect(page).to have_content "Title can't be blank"
+      end
+    end
+  
 end
