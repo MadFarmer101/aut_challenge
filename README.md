@@ -1,24 +1,43 @@
-# README
+### Authors
+[Janko](https://github.com/MadFarmer101)  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built with
+**Front End:** Rails v.6.0.2.1 | Ruby 2.6.3 
+**Testing framework:** Rspec  
 
-Things you may want to cover:
+## The code   
+My first Ruby on Rails project. 
 
-* Ruby version
+The project it self is to build a website where the user can create, read, edit and also delete articles. The user does not have to log in to use the website. 
 
-* System dependencies
+## Getting Started
+### Dependencies  
+* rspec-rails
+* shoulda-matchers
+* factory_bot_rails
+* capybara
+* coveralls
 
-* Configuration
+### Setup
+To run this application you should do following steps:
+To get the application on your local devise:
+``` $ git clone https://github.com/MadFarmer101/AUT_challenge.git ```
 
-* Database creation
+To unstall the gems that are used:
+``` $ bundle ```
 
-* Database initialization
+Create the database localy:
+``` $ rails db:create db:migrate ```
 
-* How to run the test suite
+### Instructions
+To use the application
+Start the rails server localy
+``` $ rails s ```
 
-* Services (job queues, cache servers, search engines, etc.)
+Then you can visit the application in your browser by typing in "localhost:3000" and try out the functionalities. 
 
-* Deployment instructions
+## License  
+[MIT-license](https://en.wikipedia.org/wiki/MIT_License)
 
-* ...
+### Acknowledgement  
+- Material provided by [Craft Academy](https://craftacademy.se)

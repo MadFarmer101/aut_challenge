@@ -1,4 +1,4 @@
-require_relative 'boot'
+require_relative "boot"
 
 require "rails"
 # Pick the frameworks you want:
@@ -24,23 +24,17 @@ module RailsDemo
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-	# Disable generation of helpers, javascripts, CSS, and view, helper, routing and controller specs
+    # Disable generation of helpers, javascripts, CSS, and view, helper, routing and controller specs
 
-	config.generators do |generate|
-		generate.helper false
-		generate.assets false
-		generate.view_specs false
-		generate.helper_specs false
-		generate.routing_specs false
-		generate.controller_specs false
-	end
+    config.generators do |generate|
+      generate.helper false
+      generate.assets false
+      generate.view_specs false
+      generate.helper_specs false
+      generate.routing_specs false
+      generate.controller_specs false
+    end
 
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration can go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded after loading
-    # the framework and any gems in your application.
-
-    # Don't generate system test files.
     config.generators.system_tests = nil
   end
 end
